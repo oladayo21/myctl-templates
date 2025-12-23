@@ -1,5 +1,5 @@
 name: authentik
-description: Identity provider with SSO, OAuth, SAML (+ PostgreSQL, Redis)
+description: Identity provider with SSO, OAuth, SAML (+ PostgreSQL)
 port: 9000
 env:
   - name: AUTHENTIK_SECRET_KEY
