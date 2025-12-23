@@ -1,0 +1,16 @@
+services:
+  whoami:
+    image: traefik/whoami:latest
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${SERVICE_NAME}.rule=Host(`${SERVICE_DOMAIN}`)"
+      - "traefik.http.routers.${SERVICE_NAME}.entrypoints=websecure"
+      - "traefik.http.routers.${SERVICE_NAME}.tls.certresolver=letsencrypt"
+      - "traefik.http.services.${SERVICE_NAME}.loadbalancer.server.port=80"
+    networks:
+      - traefik-network
+
+networks:
+  traefik-network:
+    external: true

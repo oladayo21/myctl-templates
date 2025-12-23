@@ -8,6 +8,7 @@ Service templates for [myctl](https://github.com/oladayo21/myctl) server managem
 |----------|-------------|------|
 | postgres | PostgreSQL 16 database | 5432 |
 | redis | Redis 7 cache | 6379 |
+| whoami | HTTP request/response testing | 80 |
 
 ## Usage
 

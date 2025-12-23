@@ -1,0 +1,4 @@
+name: whoami
+description: HTTP request/response testing service
+port: 80
+env: []
