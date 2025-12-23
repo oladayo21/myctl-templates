@@ -1,0 +1,11 @@
+name: postgres
+description: PostgreSQL 16 database
+port: 5432
+env:
+  - name: POSTGRES_USER
+    default: postgres
+  - name: POSTGRES_PASSWORD
+    required: true
+    generate: true
+  - name: POSTGRES_DB
+    default: postgres

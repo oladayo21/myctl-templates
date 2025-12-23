@@ -1,0 +1,7 @@
+name: redis
+description: Redis 7 in-memory data store
+port: 6379
+env:
+  - name: REDIS_PASSWORD
+    required: true
+    generate: true
