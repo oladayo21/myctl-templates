@@ -1,0 +1,4 @@
+templates:
+  - postgres
+  - redis
+  - whoami
