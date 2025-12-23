@@ -8,6 +8,7 @@ Service templates for [myctl](https://github.com/oladayo21/myctl) server managem
 |----------|-------------|------|
 | postgres | PostgreSQL 16 database | 5432 |
 | redis | Redis 7 cache | 6379 |
+| umami | Privacy-focused web analytics (+ PostgreSQL) | 3000 |
 | uptime-kuma | Uptime monitoring and status page | 3001 |
 | whoami | HTTP request/response testing | 80 |
 

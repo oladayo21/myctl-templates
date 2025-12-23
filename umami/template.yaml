@@ -1,0 +1,10 @@
+name: umami
+description: Privacy-focused web analytics (includes PostgreSQL)
+port: 3000
+env:
+  - name: POSTGRES_PASSWORD
+    required: true
+    generate: true
+  - name: APP_SECRET
+    required: true
+    generate: true

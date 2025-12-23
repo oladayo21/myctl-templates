@@ -1,5 +1,6 @@
 templates:
   - postgres
   - redis
+  - umami
   - uptime-kuma
   - whoami
