@@ -23,14 +23,25 @@ myctl template show postgres
 myctl deploy --template=postgres --name=mydb --server=prod
 ```
 
-## Template Structure
-
-Each template contains:
+## Repository Structure
 
 ```
-<template>/
-  template.yaml   # Service metadata, port, env vars
-  compose.yaml    # Docker Compose configuration
+myctl-templates/
+  index.yaml        # Template registry (myctl fetches this)
+  <template>/
+    template.yaml   # Service metadata, port, env vars
+    compose.yaml    # Docker Compose configuration
+```
+
+### index.yaml
+
+Lists all available templates. myctl fetches this at runtime:
+
+```yaml
+templates:
+  - postgres
+  - redis
+  - whoami
 ```
 
 ### template.yaml
@@ -58,7 +69,8 @@ Standard Docker Compose file with health checks.
 1. Create directory: `<name>/`
 2. Add `template.yaml` with metadata
 3. Add `compose.yaml` with Docker config
-4. Submit PR
+4. Add template name to `index.yaml`
+5. Push (no myctl rebuild needed)
 
 ## License
 
