@@ -1,4 +1,5 @@
 templates:
+  - authentik
   - postgres
   - redis
   - umami

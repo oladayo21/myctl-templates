@@ -1,0 +1,10 @@
+name: authentik
+description: Identity provider with SSO, OAuth, SAML (+ PostgreSQL, Redis)
+port: 9000
+env:
+  - name: AUTHENTIK_SECRET_KEY
+    required: true
+    generate: true
+  - name: PG_PASS
+    required: true
+    generate: true

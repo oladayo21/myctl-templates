@@ -6,6 +6,7 @@ Service templates for [myctl](https://github.com/oladayo21/myctl) server managem
 
 | Template | Description | Port |
 |----------|-------------|------|
+| authentik | Identity provider / SSO (+ PostgreSQL, Redis) | 9000 |
 | postgres | PostgreSQL 16 database | 5432 |
 | redis | Redis 7 cache | 6379 |
 | umami | Privacy-focused web analytics (+ PostgreSQL) | 3000 |
